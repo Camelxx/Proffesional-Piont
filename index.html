@@ -21,132 +21,246 @@
 
 <body>
 
-    <!-- Nav Bar -->
-    
-    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">   
-            <a class="navbar-brand mr-auto" href="#"><img src="./img/line-graph.png" height="30" width="41">
-                Proffesional Point
-            </a>
-
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <a class="navbar-brand" href="index.html">Proffesional Point</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-         
-
-            <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span>
-                            Home</a></li>
-                    <li class="nav-item "><a class="nav-link" href="#"><span class="fa fa-pie-chart fa-lg"></span>
-                            Charting</a></li>
-                    <li class="nav-item "><a class="nav-link" href="#"><span class="fa fa-sort-amount-asc "></span>
-                            SENS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span
-                                class="fa fa-info fa-lg"></span> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Login</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span
-                                class="fa fa-address-card fa-lg"></span>Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signUp.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chart.html">Charting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sens.html">Sens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
-                <span class="navbar-text">
-                    <a id="signInBtn">
-                        <span class="fa fa-sign-in"></span> Login
-                    </a>
-                </span>
+
             </div>
         </div>
     </nav>
 
-    <!-- Headers -->
-    <header class="jumbotron">
-        <div class="container">
-
-            <!-- Header first row -->
-            <div class="row row-header align-items-center">
-
-                    <div class="col-12 col-sm-3">
-                            <div class="col-12 col-sm">
-                                <img src="./img/line-graph.png" alt=""  height="88" width="150">                                
-                            </div>
-
-                              
-                          
+    <!-- Carousel -->
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" style="background-image: url('./img/1900x1080.png')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>First Slide</h3>
+                        <p>This is a description for the first slide.</p>
                     </div>
-                     
-                    <h1>Proffesional Point</h1>
-                    <p>Lose eyes get fat shew. Winter can indeed letter oppose way change tended now. So is improve my charmed picture exposed adapted demands. Received had end produced prepared diverted strictly off man branched. Known ye money so large decay voice there to. Preserved be mr cordially incommode as an. He doors quick child an point at. Had share vexed front least style off why him. </p>
-          
-            
-             
-
-                <div class="col-12 col-sm-3 align-self-center">
-                    <a id="ReserveTableBtn" role="button" class="btn btn-block btn-warning">Reserve Table</a>
                 </div>
-
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('./img/1900x1080.png')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Second Slide</h3>
+                        <p>This is a description for the second slide.</p>
+                    </div>
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('./img/1900x1080.png')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Third Slide</h3>
+                        <p>This is a description for the third slide.</p>
+                    </div>
+                </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </header>
 
 
+    <!-- Page Content -->
     <div class="container">
+
+        <h1 class="my-4">Welcome to Proffesional Point</h1>
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <h4 class="card-header">Card Title</h4>
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
+                            necessitatibus neque.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <h4 class="card-header">Card Title</h4>
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam
+                            eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque
+                            exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <h4 class="card-header">Card Title</h4>
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
+                            necessitatibus neque.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Last Trade Ideas -->
+        <h2>Latest Trade Ideas</h2>
+
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="./img/btcusd.png" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">BTCUSD - 4 hour chart</a>
+                        </h4>
+                        <p class="card-text">Are we just making a lower high before making a lower low?
+
+                                A lot will tell us once the 4 hour candle is closed. If we can close above the down trend line and above the Fib level we will go to the 8000 region.
+                                
+                                If the trendline and fib level acts as resistance once more than we might fall down to the 6000 region.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="./img/usdjpy.png" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">New Trade possibilities</a>
+                        </h4>
+                        <p class="card-text">With technical analysis i think in possibilities. There are always multiple possible outcomes and we only know for sure after a break of one and other.
+
+                                A. We can see multiple touches on the long time descending trendline . If we can break resistance we can enter long.
+                                
+                                B. Looks like a descending triangle , time to go short if this pattern breaks bearish . Next support might be the longer time ascending trendline .
+                                
+                                If you zoom out it looks to me like 1 big ascending triangle .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="./img/xrpusd.png" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">XRPUSD - What's next?</a>
+                        </h4>
+                        <p class="card-text">We have a lot of resistance at the 0.30 region.
+                                It is at a important FIB level and we have a rising channel which will act as resistance as well.
+                                If we can break this area's i think we will go fast to 0.32.
+                                
+                                I we can't break resistance, i think we will find support at 0.28
+                                
+                                Let's see how the market will react.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="./img/btcusd2.png" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">BTCUSD - Can we hold Support?</a>
+                        </h4>
+                        <p class="card-text">f we can hold this level we might bounce 20% up.
+                                If we can't hold support i see us dropping - 20% from here</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="./img/dax.png" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">DXY potential reversal!</a>
+                        </h4>
+                        <p class="card-text">DXY expected to rise up to 1st resistance at 98.69 where it could potentially react off and drop down to 1st support at 97.63.
+                                Trading CFDs on margin carries high risk.
+                                Losses can exceed the initial investment so please ensure you fully
+                                understand the risks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="./img/jphyauyq_mid.png" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">LONG
+                                    USDCHF bounced from support, potential for a further rise!</a>
+                        </h4>
+                        <p class="card-text">USDCHF bounced off 0.98747 where it could potentially rise further to 0.99830.
+                                Trading CFDs on margin carries high risk.
+                                Losses can exceed the initial investment so please ensure you fully
+                                understand the risks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+     
+
+     
 
     </div>
 
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+        </div>
+    </footer>
 
-    <!-- <footer class="footer">
-            <div class="container">
 
-               
-                    <div class="row">
-                        <div class="col-4 offset-1 col-sm-2">
-                            <h5>Links</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="./aboutus.html">About</a></li>
-                                <li><a href="#">Menu</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-7 col-sm-5">
-                            <h5>Our Address</h5>
-                            <address>
-                                121, Clear Water Bay Road<br>
-                                Clear Water Bay, Kowloon<br>
-                                HONG KONG<br>
-                                <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-                                <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
-                                <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
-                            </address>
-                        </div>
-                        <div class="col-12 col-sm-4 align-self-center">
-                            <div class="text-center">
-                                <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
-                                        class="fa fa-google-plus fa-lg"></i></a>
-                                <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
-                                        class="fa fa-facebook fa-lg"></i></a>
-                                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
-                                        class="fa fa-linkedin fa-lg"></i></a>
-                                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
-                                        class="fa fa-twitter fa-lg"></i></a>
-                                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
-                                        class="fa fa-youtube fa-lg"></i></a>
-                                <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
-                            </div>
-                        </div>
-                    </div>
-        
-                 
-                    <div class="row justify-content-center">
-                        <div class="col-auto">
-                            <p>© Copyright 2018 Ristorante Con Fusion</p>
-                        </div>
-                    </div>
-        
-                </div>
 
-    </footer> -->
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->

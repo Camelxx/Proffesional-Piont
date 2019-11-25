@@ -1,0 +1,21 @@
+.navbar-dark {
+    background-color: #6666ff; 
+}
+
+.jumbotron {    
+    margin: 0px auto;
+    padding: 70px 30px;
+    background:#7f7fff;
+    color: floralwhite;
+ }
+
+ .footer {
+    background-color: #D1C4E9;
+    margin: 0px auto;
+    padding: 20px 0px;
+ }
+
+ #navName{
+     color: white;
+ }
+

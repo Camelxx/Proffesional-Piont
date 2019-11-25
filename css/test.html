@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <!--build:css css/main.css-->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- FontAwsome CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <!-- Bootstrap Social CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <!-- Own Custom CSS -->
+    <link rel="stylesheet" href="/css/own.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!--endbuild-->
+
+    <title>Ristorante Con Fusion</title>
+    
+</head>
+
+<body>
+
+    <!-- navbar-expand-sm to collaps in small size screens -->
+    <!-- fixed-top the navbar will always been on the top of the page fixed -->
+    <!-- navbar-brand is the company name or company icon -->
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="#"><img src="./img/logo.png" height="30" width="41"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span>
+                            Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span
+                                class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span
+                                class="fa fa-address-card fa-lg"></span>Contact</a></li>
+                </ul>
+                <span class="navbar-text">
+                    <a id="signInBtn">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- login Model -->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!--Main Modal-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+
+                <!--Modal Body -->
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                    placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1"
+                                    id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Reserve Table Model -->
+    <div id="ReserveTabelModel" class="modal fade" role="dialog">
+
+        <div class="modal-dialog modal-lg" role="content">
+
+            <!--Main Modal-->
+            <div class="modal-content">
+
+                <!--Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a Table</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+
+                <!--Modal Body -->
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+
+                            <!-- Header Label -->
+                            <label for="numguest" class="col-12 col-md-2 col-form-label">Number of Guests</label>
+
+                            <!-- radio bottons -->
+                            <div class="col-12 col-md-10">
+
+                                <!-- Number of Guest 1-->
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="numguest1" name="rd">
+                                    <label class="custom-control-label" for="numguest1">1</label>
+                                </div>
+
+                                <!-- Number of Guest 2-->
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="numguest2" name="rd">
+                                    <label class="custom-control-label" for="numguest2">2</label>
+                                </div>
+
+                                <!-- Number of Guest 3-->
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="numguest3" name="rd">
+                                    <label class="custom-control-label" for="numguest3">3</label>
+                                </div>
+
+                                <!-- Number of Guest 4-->
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="numguest4" name="rd">
+                                    <label class="custom-control-label" for="numguest4">4</label>
+                                </div>
+
+                                <!-- Number of Guest 5-->
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="numguest5" name="rd">
+                                    <label class="custom-control-label" for="numguest5">5</label>
+                                </div>
+
+                                <!-- Number of Guest 6-->
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="numguest6" name="rd">
+                                    <label class="custom-control-label" for="numguest6">6</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section -->
+                        <div class="form-group row">
+                            <label for="section" class="col-12 col-md-2 col-form-label">Section</label>
+                            <div class="col-12 col-md-4">
+
+                                <div class="btn-group btn-group-toggle" role="group" data-toggle="buttons">
+                                    <label class="btn btn-success active" for="NoneSmoking">
+                                        <input class="form-check-input" type="radio" name="NoneSmoking" id="NoneSmoking"
+                                            value="" autocomplete="off" checked>Non-Smoking
+                                    </label>
+                                    <label class="btn btn-danger" for="Smoking">
+                                        <input class="form-check-input" type="radio" name="Smoking" id="Smoking"
+                                            value="" autocomplete="off">Smoking
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Date & Time Inputs -->
+                        <div class="form-group row">
+
+                            <label for="datetime" class="col-12 col-md-2 col-form-label">Date and Time</label>
+
+                            <div class="col-12 col-md-4">
+                                <input type="tel" class="form-control" id="ReserveDate" name="ReserveDate"
+                                    placeholder="Date">
+                            </div>
+
+                            <div class="col-12 col-md-4">
+                                <input type="tel" class="form-control" id="ReserveTime" name="ReserveTime"
+                                    placeholder="Time">
+                            </div>
+
+                        </div>
+
+                        <!--Reserve Button -->
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-4 justify-content-left">
+                                <button type="submit" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Reserve</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Headers -->
+    <header class="jumbotron">
+        <div class="container">
+
+            <!-- Header first row -->
+            <div class="row row-header align-items-center">
+                <div class="col-12 col-sm-6">
+                    <h1>Ristorante con Fusion</h1>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
+                        lipsmacking creations will tickle your culinary senses!</p>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="col-12 col-sm">
+                        <img src="./img/logo.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-3 align-self-center">
+                    <a id="ReserveTableBtn" role="button" class="btn btn-block btn-warning">Reserve Table</a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+   
+
+    <!-- Footer Container -->
+    <footer class="footer">
+        <div class="container">
+
+            <!-- Footer first row -->
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+                        121, Clear Water Bay Road<br>
+                        Clear Water Bay, Kowloon<br>
+                        HONG KONG<br>
+                        <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                        <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                        <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
+                    </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                                class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
+                                class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                                class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                                class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer second row -->
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!--build:js js/main.js-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!--endbuild-->
+    
+</body>
+
+</html>

@@ -15,7 +15,7 @@
     <!-- Own style sheet -->
     <link rel="stylesheet" href="/css/styles.css">
 
-    <title>Proffesional Point</title>
+    <title>Professional Point</title>
 
 </head>
 
@@ -24,7 +24,7 @@
     <!-- Navigation -->
     <nav id="navbar" class="navbar fixed-top navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Proffesional Point</a>
+            <a class="navbar-brand" href="index.html">Professional Point</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -33,7 +33,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="">Login</a>
+                        <a id="signInBtn" class="nav-link">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="signUp.html">Sign Up</a>
@@ -53,12 +53,61 @@
 
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
+                    </li>                 
                 </ul>
+
+             
 
             </div>
         </div>
     </nav>
+
+
+     <!-- login Model -->
+     <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <!--Main Modal-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            &times;
+                        </button>
+                    </div>
+    
+                    <!--Modal Body -->
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                    <input type="password" class="form-control form-control-sm mr-1"
+                                        id="exampleInputPassword3" placeholder="Password">
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+    
+                </div>
+            </div>
+    </div>
 
     <!-- Carousel -->
     <header>
@@ -69,25 +118,25 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
-                <!-- Slide One - Set the background image for this slide in the line below -->          
-                <div class="carousel-item active" style="background-image: url('./img/trading3.jpg')">
+                <!-- Slide One - Set the background image for this slide in the line below -->      
+                <div class="carousel-item active" style="background-image: url('./img/black-and-white-business-chart-computer-241544.jpg')">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>First Slide</h3>
-                        <p>This is a description for the first slide.</p>
+                     <!--    <h3>First Slide</h3>
+                        <p>This is a description for the first slide.</p> -->
                     </div>
                 </div>
                 <!-- Slide Two - Set the background image for this slide in the line below -->
-                <div class="carousel-item" style="background-image: url('./img/trading2.jpg')">
+                <div class="carousel-item" style="background-image: url('./img/space-grey-ipad-air-with-graph-on-brown-wooden-table-187041.jpg')">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>Second Slide</h3>
-                        <p>This is a description for the second slide.</p>
+                      <!--   <h3>Second Slide</h3>
+                        <p>This is a description for the second slide.</p> -->
                     </div>
                 </div>
                 <!-- Slide Three - Set the background image for this slide in the line below -->
-                <div class="carousel-item" style="background-image: url('./img/1900x1080.png')">
+                <div class="carousel-item" style="background-image: url('./img/white-android86464.jpg')">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>Third Slide</h3>
-                        <p>This is a description for the third slide.</p>
+                       <!--  <h3>Third Slide</h3>
+                        <p>This is a description for the third slide.</p> -->
                     </div>
                 </div>
             </div>
@@ -106,10 +155,10 @@
     <!-- Page Content -->
     <div class="container">
 
-        <h1 class="my-4">Welcome to Proffesional Point</h1>
+        <h1 class="my-4">Welcome to Professional Point</h1>
 
         <!-- Marketing Icons Section -->
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-lg-4 mb-4">
                 <div class="card h-100">
                     <h4 class="card-header">Card Title</h4>
@@ -147,7 +196,55 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+
+        <div class="row row-content mt-5">
+                <div class="col">
+                    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img id="imgCarousel" class="d-block" src="./img/dax.png" alt="uthappiza">
+                                <div id="carouselFirstSlide", class="carousel-caption d-none d-md-block">
+                                    <h2>Get real-time information
+                                            and market insights</h2>
+
+                                    <p class="d-none d-sm-block">Easy and intuitive for beginners, and powerful enough for advanced chartists – Professional Point has all charting tools you need to share and view trading ideas. Real-time data and browser-based charts let you do your research from anywhere, since there are no installations or complex setups.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img  id="imgCarousel" class="d-block img-fluid" src="img/CarouselImg2.png" alt="buffet">
+                                <div id="carouselSecondSlide" class="carousel-caption d-none d-md-block">
+                                    <h2>Never trade alone again</h2>
+                                    <p class="d-none d-sm-block">Trading the financial markets is lonely. Professional Point - lets you discover investment ideas and showcase your talents to a large and active community of traders. Freely discuss, share and learn with thousands of market participants using Professional Point. </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img  id="imgCarousel" class="d-block img-fluid" src="img/CarouselImg3.png" alt="alberto">
+                                <div id="carouselThirdSlide"  class="carousel-caption d-none d-md-block">
+                                    <h2>Professional Point community needs your ideas!</h2>                              
+                                    <p class="d-none d-sm-block">Start sharing your ideas today - criticize and argue, comment and add important details, be active! Together, all these interactions make up the precious nuggets of knowledge that can be used by many traders all over the world </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators" style="margin-left: 350px">
+                            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#mycarousel" data-slide-to="1"></li>
+                            <li data-target="#mycarousel" data-slide-to="2"></li>
+                        </ol>
+                        <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>                    
+                    </div>
+                </div>
         </div>
+        <br>
+        <br>
+
+
 
 
         <!-- Last Trade Ideas -->
@@ -247,31 +344,23 @@
         </div>
         <!-- /.row -->
 
-     
-
-     
-
     </div>
 
     <footer class="footer">
         <div class="container">                   
             <div class="row justify-content-center">
                     <div class="col-auto">
-                        <p>© Copyright 2019 Proffesional Point</p>
+                        <p>© Copyright 2019 Professional Point</p>
                     </div>
                 </div>
         </div>
     </footer>
 
-
-
-
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!--    <script src="js/scripts.js"></script> -->
+    <script src="js/scripts.js"></script>
 
 </body>
 

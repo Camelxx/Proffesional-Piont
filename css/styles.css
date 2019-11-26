@@ -3,8 +3,8 @@ body {
   }
   
   .carousel-item {
-    height: 65vh;
-    min-height: 300px;
+    height: 45vh;
+    min-height: 200px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -17,7 +17,7 @@ body {
   }
 
   #navbar{
-    background-color:#7f7fff;
+    background-color:#7f7fff;   
     
   }
 
@@ -42,3 +42,45 @@ body {
     background-color: #7f7fff;
     margin: 0px auto;
     padding: 20px 0px; }
+
+    .carousel {
+      background: #7f7fff; }
+      .carousel .carousel-item {
+        height: 300px; }
+        .carousel .carousel-item img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          min-height: 300px; }
+
+#imgCarousel{
+  width:300px;
+}          
+
+#carouselThirdSlide{
+  width: 600px;
+  margin-left: 173px;
+  margin-bottom: 26px;
+}
+
+#carouselFirstSlide{
+  width: 600px;
+  margin-left: 173px;
+  margin-bottom: 26px;
+}
+
+#carouselSecondSlide{
+  width: 600px;
+  margin-left: 173px;
+  margin-bottom: 30px;
+}
+
+.modal-header {
+  background-color: #7f7fff;
+  color: floralwhite; }
+  .modal-header .close {
+    color: floralwhite; }
+
+.modal-body {
+  background-color: whitesmoke; }
+    

@@ -25,25 +25,20 @@
     <nav id="navbar" class="navbar fixed-top navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">Professional Point</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            <button id="navbarToggel" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+         
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
+                <ul id="navUl" class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a id="signInBtn" class="nav-link">Login</a>
+                        <a id="signInBtn" class="nav-link" >Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="signUp.html">Sign Up</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="chart.html">Charting</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sens.html">Sens</a>
-                    </li>
+                        <a id="signUp" class="nav-link" href="signUp.html">Sign Up</a>
+                    </li>             
                     <li class="nav-item">
                         <a class="nav-link" href="services.html">Services</a>
                     </li>
@@ -52,7 +47,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link hidden" href="contact.html">Contact</a>
                     </li>                 
                 </ul>
 
@@ -100,7 +95,7 @@
                             <div class="form-row">
                                 <button type="button" class="btn btn-secondary btn-sm ml-auto"
                                     data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                                <button onclick="loginUser()" type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
                             </div>
                         </form>
                     </div>

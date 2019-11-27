@@ -17,9 +17,21 @@ body {
   }
 
   #navbar{
-    background-color:#7f7fff;   
-    
+    background-color:#375cad;       
   }
+
+  #navbarToggel{
+    background-color: whitesmoke;
+  }
+
+  #signInBtn:hover{
+    color: black;
+  }
+
+  #signInBtn{
+    color: whitesmoke;
+  }
+
 
   .nav-link{
     color: whitesmoke;
@@ -39,12 +51,12 @@ body {
   }
 
   .footer {
-    background-color: #7f7fff;
+    background-color: #375cad;
     margin: 0px auto;
     padding: 20px 0px; }
 
     .carousel {
-      background: #7f7fff; }
+      background: #4272d8; }
       .carousel .carousel-item {
         height: 300px; }
         .carousel .carousel-item img {
